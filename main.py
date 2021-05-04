@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def index():
-    return "Método GET"
+    return "Método GET de Prueb con Flask"
 
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -34,5 +34,5 @@ def predict():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(port=5000)
 
