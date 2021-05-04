@@ -1,1 +1,1 @@
-web: ginicorn wsgi:app
+web: ginicorn main:app
