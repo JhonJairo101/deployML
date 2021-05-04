@@ -22,9 +22,6 @@ class Modeler:
         print(len(measurement))
         if not os.path.exists('iris.model'):
             raise Exception('Por favor, entrene el modelo...') 
-        #if len(measurement) == 4:
-        #    print(len(measurement))
-        #    raise Exception('Por favor, rectifique los parámetros de entrada.') 
 
         prediction = self.model.predict([measurement])
         return prediction[0]
